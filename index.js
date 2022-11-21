@@ -49,7 +49,7 @@ inquirer
         var teamManager = new Manager(answers.managerName, answers.managerID, answers.managerEmail, answers.managerOffice)
         var team = {teamManager}
 
-        fs.writeFile("employeeList", JSON.stringify(team, null, '\t'), (err) =>
+        fs.writeFile("employeeList.html", JSON.stringify(team, null, '\t'), (err) =>
       err ? console.log(err) : console.log('Team Generated!'))
     })
 
